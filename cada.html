@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+  <html lang="pt-br">
   <head>
     <!-- Meta tags Obrigatórias -->
     <meta charset="utf-8">
@@ -15,11 +15,19 @@
     <link rel="stylesheet" href="CSS/Crossbrowser.css">
     <link rel="stylesheet" href="CSS/TL-Home.css">
 
-    <title>Olá, mundo!</title>
-  </head>
-  <body>
+       
+     
+         </head>
 
-    <h1></h1>
+              <style>
+
+         
+              </style>
+        
+    
+      <body>    
+           
+             <h1></h1>
     <!-- Imagem da barra principal Fadesa Community pequena -->
     <img src="Imagens/fds-community.png" id="fds-community" style="width:230px"> <br> <br>
     
@@ -32,25 +40,25 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="login.html">Entrar / Cadastrar</a>
+        <a class="nav-link" href="login.html">Login</a>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Eventos
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="adm.html">ADM</a>
-          <a class="dropdown-item" href="ads.html">ADS</a>
-          <a class="dropdown-item" href="cont.html">Contabilidade</a>
-          <a class="dropdown-item" href="dire.html">Direito</a>
-          <a class="dropdown-item" href="edfi.html">Edfisica</a>
-          <a class="dropdown-item" href="enfe.html">Enfermagem</a>
-          <a class="dropdown-item" href="nutr.html">Nutrição</a>
-          <a class="dropdown-item" href="peda.html">Pedagogia</a>
-          <a class="dropdown-item" href="psic.html">Psicologia</a>
+          <a class="dropdown-item" href="#">ADM</a>
+          <a class="dropdown-item" href="#">ADS</a>
+          <a class="dropdown-item" href="#">Contabilidade</a>
+          <a class="dropdown-item" href="#">Direito</a>
+          <a class="dropdown-item" href="#">Edfisica</a>
+          <a class="dropdown-item" href="#">Enfermagem</a>
+          <a class="dropdown-item" href="#">Nutrição</a>
+          <a class="dropdown-item" href="#">Pedagogia</a>
+          <a class="dropdown-item" href="#">Psicologia</a>
 
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="#">Something else here</a>
@@ -66,15 +74,47 @@
     </form>
   </div>
 </nav>
-    
-    <!-- JavaScript (Opcional) -->
-    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-</body>
+         
+       
+       <div class="row">
+       <div class="col">
+           <center></form>
+            
+            <h1>Cadastrar Usuário</h1><br>
+           <form method="POST" action="">
+           <input type="text" name="nome" placeholder="Digite o nome e o sobrenome" class="form-control"><br><br>
+           
+           <input type="text" name="email" placeholder="Digite o seu e-mail" class="form-control"><br> <br>
 
-<br> <br> <br>
+           <input type="text" name="usuario" placeholder="Digite o usuário" class="form-control"><br><br>
+
+           <input type="password" name="senha" placeholder="Digite a senha" class="form-control"><br><br>
+         
+           <input type="turno" name="turno" placeholder="Digite o turno" class="form-control"><br>
+           
+           <label for="data">Data de Nascimento:</label><br>
+           <input id="date" type="date" class="form-control"><br>
+
+           <label for="login-email">Qual comunidade irá participar?</label><br>
+           <select>
+                <option value="0">Selecione Seu Curso</option>
+                <option value="1">Administração</i></option>
+                <option value="2">Análise e Desenvolvimento de Sistemas</option>
+                <option value="3">Ciências Contábeis</option>
+                <option value="4">Direito</option>
+                <option value="5">Educação Física</option>
+                <option value="6">Enfermagem</option>
+                <option value="7">Nutrição</option>
+                <option value="8">Pedagogia</option>
+                <option value="9">Psicologia</option> 
+            </select><br><br>
+
+           <input type="submit" name="btnCadUsuario" value="Cadastrar" class="btn btn-success"><br><br>
+           <div class="row text-center" style="margin-top: 20px;">
+           </center> 
+    </div>
+    </div>
+     <br> <br> <br>
 
 <div class="content">
 </div>
@@ -82,12 +122,12 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-3">
-                    <h2 class="logo"><a href="#"> COMUNITY </a></h2>
+                    <h3 class="logo"><a href="#"> COMUNITY </a></h3>
                 </div>
                 <div class="col-sm-2">
                     <h5>Inicio</h5>
                     <ul>
-                        <li><a href="home.html">Home</a></li>
+                        <li><a href="index.html">Home</a></li>
                         <li><a href="login.html">Login</a></li>
                         <li><a href="comu.html">Comunidades</a></li>
                     </ul>
@@ -105,7 +145,7 @@
                     <ul>
                         <li><a href="#">FAQ</a></li>
                         <li><a href="#">Telefones</a></li>
-                        <li><a href="#">Chat</a></li>
+                        <li><a href="https://chat.whatsapp.com/CZoP4EFj3YfI8gAPuZp58Z">Chat</a></li>
                     </ul>
                 </div>
                 <div class="col-sm-3">
@@ -128,4 +168,15 @@
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+ 
+
+               <!-- JavaScript (Opcional) -->
+                <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+               <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+               <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+               <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>     
+    
+
+    </body>
 </html>
